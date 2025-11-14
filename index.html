@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Juba Adreyen — Software Engineer</title>
+  <meta name="description" content="Juba Adreyen — Software Engineer. Systems programming, networking, cryptography, and software architecture." />
+  <meta property="og:title" content="Juba Adreyen — Software Engineer" />
+  <meta property="og:description" content="Systems programming, networking, cryptography, and software architecture." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.5;background:linear-gradient(180deg,#071024 0%, #071229 60%);color:#e6eef8}
+    .container{max-width:1100px;margin:48px auto;padding:24px}
+    header{display:flex;gap:24px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:20px;flex:0 0 120px;background:linear-gradient(135deg,var(--accent),#6366f1);display:grid;place-items:center;box-shadow:0 6px 24px rgba(2,6,23,0.6)}
+    .avatar svg{width:80px;height:80px;filter:drop-shadow(0 6px 16px rgba(0,0,0,0.6))}
+    h1{font-size:28px;margin:0}
+    .title{color:var(--muted);margin-top:6px}
+    .intro{margin-top:16px;color:#cfe7f5}
+
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:18px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+
+    .skills{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:var(--glass);padding:8px 10px;border-radius:10px;font-size:13px;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
+
+    .project{margin-bottom:14px;padding-bottom:12px;border-bottom:1px dashed rgba(255,255,255,0.03)}
+    .project:last-child{border-bottom:0;margin-bottom:0}
+    .project h3{margin:0 0 6px 0}
+    .meta{font-size:13px;color:var(--muted)}
+
+    aside .small{font-size:14px;color:var(--muted);margin-bottom:12px}
+    .socials{display:flex;gap:8px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.04);text-decoration:none;color:inherit}
+
+    footer{margin-top:40px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr}.avatar{width:96px;height:96px;flex:0 0 96px}.container{margin:24px 16px;padding:16px}}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="avatar" aria-hidden>
+        <!-- Placeholder avatar SVG -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="6" fill="white" opacity="0.06"/><path d="M7 14c1.657 0 3-1.567 3-3.5S8.657 7 7 7 4 8.567 4 10.5 5.343 14 7 14zM17 14c1.657 0 3-1.567 3-3.5S18.657 7 17 7s-3 1.567-3 3.5S15.343 14 17 14zM12 15c-3 0-5 1.567-5 3.5V20h10v-1.5c0-1.933-2-3.5-5-3.5z" fill="white" opacity="0.9"/></svg>
+      </div>
+      <div>
+        <h1>Juba Adreyen</h1>
+        <div class="title">Software Engineer — Systems · Networking · Cryptography</div>
+        <p class="intro">I build low-level systems, networked servers and tools, and robust software architecture. I work in C, Java and OCaml and enjoy performance, security and elegant design.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section>
+        <div class="card">
+          <h2 style="margin-top:0">Skills</h2>
+          <div class="skills" style="margin-top:12px">
+            <span class="tag">C (systems, sockets, threads)</span>
+            <span class="tag">Java (Javafx, desktop apps)</span>
+            <span class="tag">OCaml & Functional Programming</span>
+            <span class="tag">Bash / Shell scripting</span>
+            <span class="tag">Network programming (TCP/IP)</span>
+            <span class="tag">Cryptography (RSA, modular math)</span>
+            <span class="tag">Algorithms & Data Structures</span>
+            <span class="tag">Concurrency & Synchronization</span>
+            <span class="tag">Software Architecture</span>
+            <span class="tag">Git & GitHub Pages</span>
+            <span class="tag">Testing & Debugging (JUnit)</span>
+            <span class="tag">Makefiles & Build systems</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h2 style="margin-top:0">Selected Projects</h2>
+
+          <article class="project">
+            <h3>freescord — Multithreaded C Chat Server</h3>
+            <div class="meta">Multi-threaded TCP server with connection management, user structs and synchronization (university project)</div>
+            <p>Implemented threading, connection handling, and a structured `user` model for a modular chat server. Focus on robustness under concurrent load and clean protocol handling.</p>
+            <div style="margin-top:8px"><a class="btn" href="https://github.com/juba-adreyen/freescord" target="_blank">View on GitHub</a></div>
+          </article>
+
+          <article class="project">
+            <h3>NetMon — Network & System Monitoring (C)</h3>
+            <div class="meta">Network monitoring agent and collector — packet inspection, metrics exporter, alerting</div>
+            <p>Designed for performance and low-overhead monitoring: packet capture, parsing and lightweight reporting. Useful for hands-on understanding of TCP/IP and system telemetry.</p>
+            <div style="margin-top:8px"><a class="btn" href="https://github.com/juba-adreyen/NetMon" target="_blank">View on GitHub</a></div>
+          </article>
+
+          <article class="project">
+            <h3>Logic Circuit Simulator (Java, Javafx)</h3>
+            <div class="meta">Component-based simulator with GUI and pathfinding for wire routing</div>
+            <p>Javafx UI separated from backend components, wires, and a BFS-based pathfinder on an undirected grid. Supports dragging components while updating connected wires.</p>
+            <div style="margin-top:8px"><a class="btn" href="https://github.com/juba-adreyen/logic-sim" target="_blank">View on GitHub</a></div>
+          </article>
+
+          <article class="project">
+            <h3>Cryptography — RSA</h3>
+            <div class="meta">Key verification, modular inverse, prime factorization and decryption routines</div>
+            <p>Worked on modular arithmetic for RSA: generating and verifying keys, implementing decryption and testing edge cases for correctness and security.</p>
+          </article>
+
+          <article class="project">
+            <h3>Advanced Shell (C)</h3>
+            <div class="meta">Custom shell supporting pipes, redirection, job control and autocompletion</div>
+            <p>Implemented command parsing, background execution, signal handling and a small job-control subsystem as a systems programming exercise.</p>
+          </article>
+
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h2 style="margin-top:0">Education</h2>
+          <p class="meta">Université Sorbonne Paris Nord — L2 Informatique & DL</p>
+          <p style="margin-top:8px">Coursework and projects focused on systems programming, networks, algorithms and software architecture.</p>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card">
+          <div class="small">Contact</div>
+          <div style="display:flex;gap:8px;flex-direction:column">
+            <a class="btn" href="https://github.com/juba-adreyen" target="_blank">GitHub · @juba-adreyen</a>
+            <a class="btn" href="mailto:juba@example.com">Email · adreyen_juba@hotmail.com</a>
+            <a class="btn" href="#" id="download-resume">Download Resume (placeholder)</a>
+          </div>
+
+          <hr style="margin:14px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)" />
+
+          <div class="small">Highlights</div>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>Strong foundation in low-level systems and networking</li>
+            <li>Experience with concurrency and robust server design</li>
+            <li>Interest in cryptography and secure software</li>
+          </ul>
+
+          <hr style="margin:14px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)" />
+
+          <div class="small">Quick Links</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+            <a class="btn" href="https://github.com/juba-adreyen?tab=repositories" target="_blank">All repos</a>
+            <a class="btn" href="https://github.com/juba-adreyen?tab=stars" target="_blank">Starred</a>
+          </div>
+        </div>
+
+        <div style="height:18px"></div>
+
+        <div class="card">
+          <h3 style="margin:0 0 8px 0">Availability</h3>
+          <p class="meta">Open to internships & collaborations. Contact via GitHub or email.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Built with care • Ready to deploy on GitHub Pages — repository: <strong>juba-adreyen.github.io</strong>
+    </footer>
+  </main>
+
+  <script>
+    // Small client-side helpers
+    document.getElementById('download-resume').addEventListener('click', function(e){
+      e.preventDefault();
+      alert('Add your resume file to the repository and replace this link with the path to the PDF (e.g. /assets/Juba_Adreyen_Resume.pdf)');
+    });
+  </script>
+</body>
+</html>
